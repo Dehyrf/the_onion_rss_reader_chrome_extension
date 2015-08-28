@@ -1,0 +1,23 @@
+{
+  "manifest_version" : 2,
+  "name": "RSS Fetcher",
+  "version": "0.1",
+
+  "description": "Keep up with the latest from The Onion.",
+  "icons": { "16" : "images/icon.png",
+ 			"48" : "images/48.png",
+			"128" : "images/128.png"},
+  "homepage_url": "http://theonion.com/",
+	"background": {
+    "page" : "background.html" },
+	"permissions": [
+"http://theonion.tumblr.com/*",
+"http://theonion.com/*"
+
+	],
+	"browser_action": {
+    "default_icon": "images/icon.png", 
+    "default_title": "The Onion Fetcher",      
+    "default_popup": "popup.html"       
+  }
+}
